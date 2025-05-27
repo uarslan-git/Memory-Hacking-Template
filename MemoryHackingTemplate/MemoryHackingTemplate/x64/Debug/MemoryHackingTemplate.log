@@ -1,0 +1,6 @@
+﻿icl: : message #10441: The Intel(R) C++ Compiler Classic (ICC) is deprecated and will be removed from product release in the second half of 2023. The Intel(R) oneAPI DPC++/C++ Compiler (ICX) is the recommended compiler moving forward. Please transition to use this compiler. Use '/Qdiag-disable:10441' to disable this message.
+  memory.cpp
+C:\Users\user\Documents\GitHub\Memory-Hacking-Template\MemoryHackingTemplate\MemoryHackingTemplate\memory.cpp(91): warning #810: conversion from "BYTE={unsigned char} *" to "DWORD={unsigned long}" may lose significant bits
+        relAddr = (DWORD)(destination - (DWORD)address) - 5; //-5 because rel32 is 5 bytes long (1 byte for 0xE9 and 4 bytes for rel32) and that one is calculated from the next instructions address (address + 5)
+                                        ^
+  
